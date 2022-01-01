@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/thucdon.css">
+    <link rel="stylesheet" href="../bottrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../font/font/css/all.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- <script type="text/javascript" src="../dist/js/id.js"></script> -->
+    <script src="../dist/js/id.js"></script>
+    <script src="../dist/js/thucdon.js"></script>
+    <title>Thực đơn</title>
+</head>
+<body>
+    <div class="main">
+        <!-- menu  -->
+        <nav class="menu navbar navbar-expand-sm navbar-light bg-faded fixed-top">
+            <a class="navbar-brand logo" href="#"><img src="./images/logo.png" alt="" id="lg"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link ds" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ds" href="thucdon.html">Thực đơn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ds" href="datban.html">Đặt bàn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ds" href="lienhe.html">Liên hệ</a>
+                    </li>
+                   
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 txtsearch" type="text" placeholder="Nhập từ khóa">
+                    <button class="btn btn-outline-success my-2 my-sm-0 nutsearch" type="submit"><i class="fas fa-search"></i></button>
+                    <div id="nutdn" class="btndangnhap my-2 my-sm-0">
+                      Đăng nhập
+                  </div>
+                </form>
+            </div>
+        </nav>
+        <!-- end menu  -->
+        
+        <!-- slide  -->
+        <div class="slide">
+            <img src="" alt="" class="layer1">
+            <div class="layernd">
+                <div class="ndsl">
+                    <h3 class="ct_big">Ẩm Thực Việt</h3>
+                    <h6 class="ct_small fixed-bottom">Trọn mọi khoảnh khắc</h6>
+                </div>
+
+            </div>
+        </div>
+        <!-- end slide  -->
+
+        <!-- thực đơn  -->
+        <div class="content_thucdon">
+            
+            <div class="thucdon">
+    
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-2">
+                      <button type="button" class="btnBac btn btn-outline-success btn-text">Menu Miền Bắc</button>
+                    </div>
+                    <div class="col-sm-2">
+                      <button type="button"  onclick="openList1()" class="btnTrung btn btn-outline-danger btn-text">Menu Miền Trung</button>
+                    </div>
+                    <div class="col-sm-2">
+                      <button type="button"  class="btnNam btn btn-outline-info btn-text">Menu Miền Nam</button>
+                    </div>
+                    <div class="col-sm-3"> </div>
+                  </div>
+                </div>
+                </div>
+                <!-- menu miền bắc -->
+                <div class="container  menu-mb" >
+                    <div class="row">
+                      <div class="col-sm-6 offer  ">
+                        <div class="offer-item">
+                          <div class="left">
+                            <img src="../dist/images/menu_mb/thuc_don1.jpg" alt="">
+                          </div>
+                          <div class="mid">
+                            <h3>Cá Hồng Chiên Giòn</h3>
+                            <p>
+                              Crispy Fried Red snapper              </p>
+                          </div>
+                          <span class="offer-price">120.000vnđ</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 offer  ">
+                        <div class="offer-item">
+                          <div class="left">
+                            <img src="../dist/images/menu_mb/thuc_don2.jpg" alt="">
+                          </div>
+                          <div class="mid">
+                            <h3>Cá Song Sốt Cà Chua</h3>
+                            <p>
+                              Codfish with Tomato Sauce                </p>
+                          </div>
+                          <span class="offer-price">220.000vnđ</span>
+                        </div>
+                      </div>
+                    </div>   
+                    <div class="row">
+                      <div class="col-sm-6 offer  ">
+                        <div class="offer-item">
+                          <div class="left">
+                            <img src="../dist/images/menu_mb/thuc_don3.jpg" alt="">
+                          </div>
+                          <div class="mid">
+                            <h3>Cá Thu Sốt Cà Chua</h3>
+                            <p>
+                              Mackerel with Tomato Sauce
+                            </p>
+                          </div>
+                          <span class="offer-price">155.000vnđ</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 offer  ">
+                        <div class="offer-item">
+                          <div class="left">
+                            <img src="../dist/images/menu_mb/thuc_don4.jpg" alt="">
+                          </div>
+                          <div class="mid">
+                            <h3>Ghẹ Hấp</h3>
+                            <p>
+                              Steamed crabs
+                            </p>
+                          </div>
+                          <span class="offer-price">60.000vnđ</span>
+                        </div>
+                      </div>
+                    </div>   
+                     <div class="row">
+                      <div class="col-sm-6 offer ">
+                        <div class="offer-item">
+                          <div class="left">
+                            <img src="../dist/images/menu_mb/thuc_don5.jpg" alt="">
+                          </div>
+                          <div class="mid">
+                            <h3>Ghẹ Rang Me</h3>
+                            <p>
+                              Fried Crab Me
+                            </p>
+                          </div>
+                          <span class="offer-price">150.000vnđ</span>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 offer  ">
+                        <div class="offer-item">
+                          <div class="left">
+                            <img src="../dist/images/menu_mb/thuc_don6.jpg" alt="">
+                          </div>
+                          <div class="mid">
+                            <h3>Thịt Bò Bóp Gỏi</h3>
+                            <p>
+                              Beef Stew Salad
+                            </p>
+                          </div>
+                          <span class="offer-price">120.000vnđ</span>
+                        </div>
+                      </div>
+                    </div>   
+                </div> 
+                 <!-- end menu miền bắc -->
+            
+                <!-- menu miền trung -->
+                <div class="container menu-mt" id="click-menu-mt" >
+                  <div class="row">
+                    <div class="col-sm-6 offer  ">
+                      <div class="offer-item">
+                        <div class="left">
+                          <img src="../dist/images/menu_mt/menu_bachtuoc.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                          <h3>Bạch Tuôc Sốt Chua Cay</h3>
+                          <p class="p-price">
+                            Octopus with Spicy Sour Sauce</p>
+                        </div>
+                        <span class="offer-price-mt">150.000vnđ</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 offer  ">
+                      <div class="offer-item">
+                        <div class="left">
+                          <img src="../dist/images/menu_mt/menu_laucua.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                          <h3>Lẩu Cua</h3>
+                          <p class="p-price">
+                            Crab Hot Pot
+                          </p>
+                        </div>
+                        <span class="offer-price-mt">220.000vnđ</span>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="row">
+                    <div class="col-sm-6 offer  ">
+                      <div class="offer-item">
+                        <div class="left">
+                          <img src="../dist/images/menu_mt/menu_nomsua.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                          <h3>Nộm Sứa</h3>
+                          <p class="p-price">
+                            Jellyfish Salad
+                          </p>
+                        </div>
+                        <span class="offer-price-mt">120.000vnđ</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 offer  ">
+                      <div class="offer-item">
+                        <div class="left">
+                          <img src="../dist/images/menu_mt/menu_lauhaisanthai.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                          <h3>Lẩu Hải Sản Thái</h3>
+                          <p class="p-price">
+                            Thai Seafood Hotpot
+                          </p>
+                        </div>
+                        <span class="offer-price-mt">250.000vnđ</span>
+                      </div>
+                    </div>
+                  </div>   
+                   <div class="row">
+                    <div class="col-sm-6 offer ">
+                      <div class="offer-item">
+                        <div class="left">
+                          <img src="../dist/images/menu_mt/menu_caApChao.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                          <h3>Cá Ngừ Áp Chảo</h3>
+                          <p class="p-price">
+                            Pan-fried Tuna              
+                          </p>
+                        </div>
+                        <span class="offer-price-mt">220.000vnđ</span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 offer  ">
+                      <div class="offer-item">
+                        <div class="left">
+                          <img src="../dist/images/menu_mt/menu_caLuoc.jpg" alt="">
+                        </div>
+                        <div class="mid">
+                          <h3>Cá Luộc</h3>
+                          <p class="p-price">
+                            Boiled Fish
+                          </p>
+                        </div>
+                        <span class="offer-price-mt">100.000vnđ</span>
+                      </div>
+                    </div>
+                  </div>   
+                </div> 
+              <!-- end menu miền trung -->
+               <!-- menu miền nam -->
+              <div class="container menu-mn" id="click-menu-mn" >
+                <div class="row">
+                  <div class="col-sm-6 offer ">
+                    <div class="offer-item">
+                      <div class="left">
+                        <img src="../dist/images/menu_mn/menu_baongusotcachua.jpg" alt="">
+                      </div>
+                      <div class="mid">
+                        <h3>Bào Ngư Sốt Cà Chua</h3>
+                        <p>
+                          Abalone with tomato sauce       
+                        </p>
+                      </div>
+                      <span class="offer-price">320.000vnđ</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 offer  ">
+                    <div class="offer-item">
+                      <div class="left">
+                        <img src="../dist/images/menu_mn/menu_tomtihap.jpg" alt="">
+                      </div>
+                      <div class="mid">
+                        <h3>Tôm Tít Hấp Sả</h3>
+                        <p>
+                          Steamed mantis shrimp with lemongrass                
+                        </p>
+                      </div>
+                      <span class="offer-price">160.000vnđ</span>
+                    </div>
+                  </div>
+                </div>   
+                <div class="row">
+                  <div class="col-sm-6 offer  ">
+                    <div class="offer-item">
+                      <div class="left">
+                        <img src="../dist/images/menu_mn/menu_mucmotnang.jpg" alt="">
+                      </div>
+                      <div class="mid">
+                        <h3>Mực Một Nắng</h3>
+                        <p>
+                          A sunny ink           
+                        </p>
+                      </div>
+                      <span class="offer-price">280.000vnđ</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 offer  ">
+                    <div class="offer-item">
+                      <div class="left">
+                        <img src="../dist/images/menu_mn/menu_mucnhay.jpg" alt="">
+                      </div>
+                      <div class="mid">
+                        <h3>Mực Hấp </h3>
+                        <p>
+                          Steamed squid
+                        </p>
+                      </div>
+                      <span class="offer-price">220.000vnđ</span>
+                    </div>
+                  </div>
+                </div>   
+                 <div class="row">
+                  <div class="col-sm-6 offer ">
+                    <div class="offer-item">
+                      <div class="left">
+                        <img src="../dist/images/menu_mn/menu_ocvunang_nuong.jpg" alt="">
+                      </div>
+                      <div class="mid">
+                        <h3>Ốc Vú Nàng Nướng</h3>
+                        <p>
+                          Grilled Breast Snail
+                        </p>
+                      </div>
+                      <span class="offer-price">150.000vnđ</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 offer  ">
+                    <div class="offer-item">
+                      <div class="left">
+                        <img src="../dist/images/menu_mn/menu_tomhumhap.jpg" alt="">
+                      </div>
+                      <div class="mid">
+                        <h3>Tôm Hùm Hấp</h3>
+                        <p>
+                          Steamed Lobster
+                        </p>
+                      </div>
+                      <span class="offer-price">320.000vnđ</span>
+                    </div>
+                  </div>
+                </div>   
+              </div>
+             <!-- end menu miền nam -->
+              </div>
+        
+        <!-- end thực đơn  -->
+        <!-- footer  -->
+        <section class="footer">
+            <div class="footer-bg"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="footer-item">
+                        <h2>Liên hệ với chúng tôi</h2>
+                        <p>Bạn muốn tham gia cùng chúng tôi trên mạng xã hôi</p>
+                        <br>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube"></i>
+                        <br>
+                        <p>Phone: 0384565564 <br> Email: xuanchienk24@gmail.com</p>
+                    </div>
+                    <div class="footer-item logo">
+                       <a href="index.html"> <img src="./images/logo.png" alt="" class="anh"></a>
+                   </div>
+                   <div class="footer-item">
+                     <h2>Địa Chỉ</h2>
+                     <p>40 Kỳ Đồng <br> Xuân Hà, Thanh Khê, Đà Nẵng</p>
+                   </div>
+                  </div>
+                </div>
+                <div class="container">
+                    <div class="footer-copyright">
+                        Toàn bộ bản quyền thuộc nhóm Đồ Án CIDO 3 - Đặng Xuân Chiến - Hoàng Anh Sỹ - Trần Văn Sỹ - Nguyễn Nhật Tân - Nguyễn Hoài Linh
+                    </div>
+                </div>
+          </section>
+        <!-- end footer  -->
+        <div class="goup">
+            <i id="btntop" class="far fa-caret-square-up btnup"></i>
+        </div>
+        <!-- đăng nhập đăng ký  -->
+        <div class="dangnhap andn">
+          <div class="container dn">
+              <div class="row">
+                  <div class="col-sm-4"></div>
+                  <div class="col-sm-4 ct">
+                      <div class="logo">
+                          <img src="../dist/images/logo.png" alt="">
+                        </div>
+                        <input type="email" class="txttkmk" id="inputtk" placeholder="Tên đăng nhập">
+                        <input type="password" class="txttkmk" id="inputmk" placeholder="Mật khẩu">
+
+                        <button type="submit" class="btndn btn btn-danger">Đăng nhập</button> <br>
+                        <a href="" class="quenmk">Quên mật khẩu ?</a> <br>
+                        <a href="dangky.html" class="dangky" >Đăng Ký</a>
+                  </div>
+                  <div class="col-sm-4"></div>
+              </div>
+          </div>
+      </div>
+
+      <!-- end đăng nhập đăng ký  -->
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

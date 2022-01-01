@@ -1,0 +1,123 @@
+
+.datban{
+    background: url(../images/bg.jpg);
+}
+.slide-oder{
+    background-color: #ecd2a7;
+    /* background: url(../images/bg-home.jpg); */
+
+}
+.oder{
+    padding: 20px 0;
+}
+.oder .or-left{
+    margin-top: 5px;
+    font-size: 22px;
+    border-right: solid 3px gray;
+}
+.order .or-left span {
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 10px;
+    display: block;
+    text-transform: uppercase;
+}
+.oder .or-right a {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #42210b;
+}
+h1{
+   padding-top: 5%;
+    font-size: 24px;
+    text-align: center;
+    color: #AE292C;
+    font-weight: bold;
+}
+.border {
+    width: 200px;
+    height: 1px;
+    background: #AE292C;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.form-group input {
+    width: 100%;
+    height: 68px;
+    padding: 10px;
+    border: #AE292C 1px solid;
+    margin-bottom: 25px;
+    font-size: 17px;
+}
+textarea {
+    border: #AE292C 1px solid;
+    width: 100%;
+    padding: 10px;
+}  
+.form-group{
+    margin-bottom: 0;
+}
+div .col-submit{
+    padding: 0px 0px;
+}  
+.col-submit .submit{
+    background: none;
+    border: 1px solid #AE292C;
+    padding: 4px 31px;
+    margin-right: 11px;
+    text-transform: uppercase;
+}
+.before_menu {
+    width: 80%;
+    height: 120px;
+    margin: 0% 10%;
+    background-color: rgba(0, 0, 0, 0.521);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  @font-face{
+    font-family: font-content;  /*tên tự chọn*/
+    src: url(../font_chu/Lobster-Regular.ttf);    
+    /*găn link font*/
+}
+@font-face{
+    font-family: font-2;  /*tên tự chọn*/
+    src: url(/dist/font_chu/dancing.ttf);    
+    /*găn link font*/
+}
+  .after_menu {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(22, 22, 19, 0.979);
+    margin: 0% 0%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+.goup {
+    position: fixed;
+    z-index: 100;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    visibility: hidden;
+  }
+  
+  .goup:hover .btnup {
+    color: #f77308;
+  }
+  
+  .goup .btnup {
+    color: #dd2121;
+    font-size: 50px;
+    margin-right: 20px;
+  }
+  
+  .hiennut {
+    opacity: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    visibility: visible;
+  }

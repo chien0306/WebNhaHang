@@ -1,0 +1,120 @@
+.content_thucdon{
+    background: url(../images/backgroud.jpg);
+    padding: 10px 0;
+}
+.anMenu {
+    /* opacity: 0; */
+    display: none;
+  }
+  
+  .hienbg {
+    /* border-radius: 10px; */
+    background-color: rgba(95, 93, 93, 0.288) !important;
+  }
+.list-breadcrumb{
+    width: 17%;
+    margin-left: 7%;
+  }
+  .list-breadcrumb ol{
+    background-color: yellowgreen;
+  }
+  .list-breadcrumb li{
+    font-family:font-2;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  /* css  button thực đơn 3 miền */
+  .col-sm-2 .btn-text{
+    padding: 7% 5%;
+    font-family: font-2;
+    font-size: 20px;
+    width: 100%;
+    font-weight:bold;
+  }
+   /* end css  button thực đơn 3 miền */
+  /*---menu---*/
+  .menu-mb{
+      background-image: url(../images/bg.jpg);
+    }
+  .menu-mt{
+    background-image: url(../images/thucdon/bg-menu-mt.jpg);
+  
+  }
+  .menu-mn{
+    background-image: url(../images/thucdon/bg-menu-mn.jpg);
+  }
+  /* menu miên bắc*/
+  .offer{
+    margin: 2.5% 0;
+  }
+  .offer-item{
+      /* overflow: hidden; */
+      margin-bottom: 30px;
+      margin-top: 30px;
+  }
+  .left{
+    padding-left: 30px;
+  }
+  .left img{
+    transition: transform 1.5s;
+  }
+  .left img:hover {
+    -ms-transform: scale( 1.5); 
+    -webkit-transform: scale(1.5); 
+    transform: scale(1.5);
+  }
+  .left img{
+      width: 130px;
+      height: 150px;
+      float: left;
+      padding: 10px;
+      background: rgb(97, 21, 21);
+      border-radius: 50%;
+      width: 22%;
+  }
+  
+  .mid{
+    width: 57%;
+    float: left;
+    padding-left: 56px;
+    padding-right: 20px;
+  }
+  .mid h3{
+      font-family: font-2;
+      font-size: 28px;
+      font-style: italic;
+      margin: 9px 0 0px;
+      font-weight:bold;
+      letter-spacing: .5px;
+      color: #e75b1e;
+  
+  }
+  .mid p{
+    font-family: font-2;
+    font-size: 24px;
+  }
+  .mid .p-price{
+    color: violet;
+  }
+  .offer-item .offer-price, .offer-price-mt{
+      border: 1px solid #e75b1e;
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      display: block;
+      width: 16%;
+      height: 92px;
+      line-height: 92px;
+      border-radius: 92px;
+      transform: translate(0, -50%);
+      color: rgb(92, 23, 23);
+      font-size: 12px;
+      font-weight: bold;
+      font-family: font-2;
+      text-align: center;
+      letter-spacing: .5px;
+  }
+  .offer-item .offer-price-mt{
+    color: wheat;
+  }

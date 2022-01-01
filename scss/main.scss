@@ -1,0 +1,669 @@
+$primary-color:  rgb(221,33,33);
+$backgroud : rgba(75, 70, 70, 0.623);
+$primary-font:'Times New Roman', Times, serif ;
+$font-nd: 'Dancing Script', cursive;
+$color-gray: rgb(95, 93, 93);
+$mau-chu: white;
+@font-face{
+    font-family: font-content;  /*tên tự chọn*/
+    src: url(../font_chu/Lobster-Regular.ttf);    
+    /*găn link font*/
+}
+@font-face{
+    font-family: font-2;  /*tên tự chọn*/
+    src: url(/dist/font_chu/dancing.ttf);    
+    /*găn link font*/
+}
+body{
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+@keyframes slide{
+    0%{background: url(../images/slide1.png); transform: scale(1) ; background-size: cover; background-repeat: no-repeat;}
+    25%{background: url(../images/slide1.png); transform: scale(1.1);background-size: cover; background-repeat: no-repeat;}
+    30%{background: url(../images/slide2.png); transform: scale(1.1);background-size: cover;background-repeat: no-repeat;}
+    45%{background: url(../images/slide2.png); transform: scale(1);background-size: cover;background-repeat: no-repeat;}
+    50%{background: url(../images/slide3.png); transform: scale(1);background-size: cover;background-repeat: no-repeat;}
+    75%{background: url(../images/slide3.png); transform: scale(1.1);background-size: cover;background-repeat: no-repeat;}
+    80%{background: url(../images/slide4.png); transform: scale(1.1);background-size: cover;background-repeat: no-repeat;}
+    100%{background: url(../images/slide4.png); transform: scale(1);background-size: cover;background-repeat: no-repeat;}
+}
+.before_menu{
+    width: 80%;
+    height: 120px;
+    margin: 0% 10%;
+    background-color: rgba(0, 0, 0, 0.521);
+    // background-color: $backgroud;
+    transition: 0.5s;
+}
+.after_menu{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(22, 22, 19, 0.979);
+    margin: 0% 0%;
+    transition: 0.5s;
+}
+.menunho{
+    height: auto;
+}
+.menu{
+
+    .logo{
+        height: 100%;
+        width: 20%;
+        #lg{
+            height: 140%;
+            margin-top: -20px;
+            margin-left: 20%;
+        }
+    }
+    .ds{
+        color: white !important;
+        font-family: font-content;
+        font-size: 23px;
+        margin: 0 5px;
+        padding: 0 5px;
+        &:hover{
+            color: $primary-color !important ;
+            
+        }
+    }
+    .btndangnhap{
+        font-family:Arial, Helvetica, sans-serif;
+        // background-color: transparent;
+        font-weight: bold;
+        color: $primary-color !important;
+        //them
+        width: 100px;
+        height: 38px;
+        text-align: center;
+        overflow: hidden;
+        cursor: pointer;
+        background-color: white;
+        padding: 8px 7px;
+        border-radius: 3px;
+    }
+    .btntaikhoan{
+        font-family:Arial, Helvetica, sans-serif;
+        // background-color: transparent;
+        font-weight: bold;
+        color: $primary-color !important;
+        //them
+        width: 100px;
+        height: 38px;
+        text-align: center;
+        cursor: pointer;
+        background-color: white;
+        padding: 5px 7px;
+        border-radius: 3px;
+    }
+    .nutsearch{
+        margin-right: 20px;
+    }    
+}
+    @keyframes move_big {
+        0%{margin-top: -55px;}
+        100%{margin-top: 0px;}
+    }
+    @keyframes move_small {
+        0%{opacity: 0;}
+        50%{opacity: 0.5; }
+        100%{opacity: 1;color: yellowgreen;}
+    }
+.slide{
+    position:relative;                                   
+    width: 100%;
+    height: 800px;
+    overflow: hidden;
+    .layer1{
+        position: absolute;
+        // left: -18px;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat; 
+        animation: slide 40s infinite;
+        
+    }
+    .layernd{
+        position: absolute;
+        // border: 1px solid black;
+        height: 120px;
+        width: 500px;
+        z-index: 3;
+        margin: 25% 10%;
+        
+        overflow: hidden;
+        .ndsl{
+            position: relative;
+            height: 100%;
+            width: 100%;
+
+            font-family: font-content;
+            // border: 1px solid blue;
+            color:$primary-color;
+            .ct_big{
+                position: absolute;
+                
+                height: 60px;
+                font-size: 55px;
+                padding: 0px 1%;
+                font-weight: unset;
+                // margin-top: -55px;
+                animation: move_big 3s forwards;
+            }
+            .ct_small{
+
+                position: absolute;
+                font-size: 35px;
+                opacity: 0;
+                animation: move_small 2s forwards;
+                animation-delay: 1s;
+            }
+        }
+    }
+}
+.content{
+    // height: 1000px;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    background: url(../images/bg.jpg);  
+}
+
+//ẩn menu món ăn
+.anMenu{
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+}
+.hienbg{
+    border-radius: 10px;
+    background-color: rgba(95, 93, 93, 0.288);
+
+}
+.listTitle{
+    width: 100%;
+    height: auto;
+    .thucdon{   
+        padding-top: 30px;
+        font-family: font-content;
+        color: rgb(95, 93, 93);
+        font-size: 50px;
+        width: 100%;
+        text-align: center;
+    }
+    .menumon{
+        width: 35%;
+        margin: 0 32%;
+        height: auto;
+        font-family: font-2;
+        .list{
+            text-align: center;
+            text-decoration: none;
+            color: rgb(49, 194, 57);
+            font-weight: bold;
+            // width: 33%;
+            width: 100%;
+            float: left;
+            font-size: 30px;
+        }
+    }
+}
+.listMenu{   
+    width: 100%;
+    
+}
+.hinh{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(182, 182, 182, 0.582);
+    border: 1px solid rgba(128, 128, 128, 0.103);
+    margin-bottom: 30px ;
+    // border: 11px solid darkblue;
+    border-radius: 10px;
+    overflow: hidden;
+    
+    &:hover{
+        border: 1px solid rgba(128, 128, 128, 0.582);
+    }
+    &:hover .layer2{
+        cursor: pointer;
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0.562);
+        transition: 0.5s;
+    }
+    .layer1{
+        position: absolute;
+        width: 100%;
+        height: 320px;
+        margin: 0 0;
+        z-index: 1;
+    }
+    .layer3{
+        
+        position: absolute;
+        z-index: 2;
+        width: 100%;      
+        text-align: center;
+        top: 333px;
+        font-family: font-content;
+        .name{
+            font-size: 25px;
+            color: $primary-color;
+            font-weight: bold;
+        }
+    }
+    .layer2{
+        position: absolute;
+        z-index: 4;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        
+        .fas{
+            font-size: 50px;
+            color: $primary-color;
+            margin-left: 35% !important;
+            text-align: center;
+            margin: 45% 0;
+            padding: 25px ;
+            padding-left: 20px;
+            padding-right: 25px;
+            // border: 1px solid red;
+            border-radius: 50%;
+            &:hover{
+                background-color: rgba(255, 0, 0, 0.719);
+                color: white;
+                transition: 0.5s;
+            }
+            
+            
+        }
+        
+    }
+}
+//tin tức
+@keyframes dcNen1{
+    0%{margin-top: -30%;}
+    25%{margin-top: 0;}
+    50%{margin-top: -30%;}
+    75%{margin-top: 0;}
+    100%{margin-top: -30%;}
+
+}
+.tintuc{
+    width: 100%;
+    height: auto;  
+    //background: url(../images/bg.jpg);
+    background: url(../images/bg-home.jpg);
+    // background-size: cover;
+    .title{
+        background: url(/dist/images/background-ambiance3.png);
+        background-size: cover;
+        position: relative;
+        height: 100px;
+        background-color:rgba(95, 93, 93, 0.288) ;
+        font-family: font-content;
+        overflow: hidden;
+        .nentrai{
+            height: 80px;
+            width: 50%;
+            float: left;
+            opacity: 0.5;
+            margin-top: -30%;
+            animation: dcNen1 40s infinite;
+            #nen1{
+                width: 100%;
+            }
+        }
+        .nd{
+            position: absolute;
+            z-index: 1;
+            height: 100px;
+            // color: green;
+            color: #cd864c;
+            width: 100%;
+            text-align: center;
+            font-size: 50px;
+            padding: 10px 0px;
+        }
+        .nenphai{
+            // position: absolute;
+            // z-index: 2;
+            height: 80px;
+            width: 50%;
+            float: right;
+            text-align: right;
+            // border: 1px solid rgb(31, 69, 190);
+            opacity: 0.5;
+            animation: dcNen1 40s infinite;
+            // overflow: hidden;
+            #nen2{
+                width: 60%;
+            }
+        }
+
+    }
+    .ndTinTuc{
+        height: auto;
+        width: 100%;
+        padding: 20px ;
+        .col-sm-8{
+            padding: 4px 4px;
+        }
+        .col-sm-4{
+            padding: 4px 4px;
+        }
+        //hinh nho
+        .hinh1{
+            position: relative;
+            width: 100%;
+            height: 350px;
+            // margin: 15px 0;
+            background-color: rgba(182, 182, 182, 0.582);
+            border: 1px solid rgba(128, 128, 128, 0.103);
+            overflow: hidden;
+            &:hover .layer2{
+                opacity: 1;
+                background-color: rgba(182, 182, 182, 0.582);
+                transition: 0.5s;
+            }
+            .layer1{
+                position: absolute;
+                width: 100%;
+                height: 350px;
+                z-index: 1;
+            }
+             //nền chưa icon
+            .layer2{
+                position: absolute;
+                z-index: 4;
+                width: 100%;
+                height: 100%;
+                &:hover .vuong{
+                    transform: rotate(45deg);
+                    opacity: 1;
+                    transition: 1s;
+                    width: 200px;
+                    height:200px;
+                    margin: 75px 275px;
+                }
+                &:hover .chu{ 
+                    // transform: rotate(0);
+                    opacity: 1;
+                    transition: 0.5s;
+                    // width: 140px;
+                    width: 80%;
+                    height: 140px;
+                    margin: 105px 100px;
+                }
+                .vuong{
+                    position: absolute;
+                    z-index: 2;
+                    width: 0px;
+                    height:0px;
+                    // transform: rotate(45deg);
+                    margin: 170px 50%;
+                    opacity: 0;
+                    border: 5px solid $primary-color;
+                }
+                .chu{
+                    position: absolute;
+                    z-index: 11;
+                    background-color:white;
+                    color: blue;
+                    font-size: 30px;
+                    text-align: left;
+                    padding: 10px 10px;
+                    
+                    
+                    opacity: 0;
+                    width: 140px;
+                    // width: 60%;
+                    height: 140px;
+                    margin: 105px 305px;
+                    border: 1px solid rgb(252, 11, 11);
+                    .tensp{
+                        text-align: center;
+                        font-family: font-content;
+                        font-weight: bold;
+                        color: green;
+                    }
+                    .giaban{
+                        font-family: font-2;
+                    // font-weight: bold;
+                    }
+                }
+                
+            }
+        }
+        //hinh to
+        .hinhto{
+            &:hover .layer2{
+                opacity: 1;
+                background-color: rgba(238, 77, 14, 0.562);
+                transition: 0.5s;
+            }
+            .layer1{
+                height: 900px;
+                margin-top: -275px;
+            }
+            .layer2{
+                position: relative;
+                &:hover .vuong{
+                    transform: rotate(45deg);
+                    opacity: 1;
+                    transition: 0.8s;
+                    width: 200px;
+                    height:200px;
+                    margin: 75px 275px;
+                }
+                &:hover .chu{ 
+                    // transform: rotate(0);
+                    opacity: 1;
+                    transition: 0.2s;
+                    // width: 140px;
+                    width: 60%;
+                    height: 140px;
+                    margin: 105px 150px;
+                }
+                .vuong{
+                    position: absolute;
+                    z-index: 2;
+                    
+                    width: 0px;
+                    height:0px;
+                    // transform: rotate(45deg);
+                    margin: 170px 50%;
+                    opacity: 0;
+                    border: 5px solid $primary-color;
+                }
+
+                .chu{
+                    position: absolute;
+                    z-index: 11;
+                    background-color:white;
+                    color: blue;
+                    font-size: 30px;
+                    text-align: center;
+                    padding: 10px 10px;
+                    
+                    // transform: rotate(45deg);
+                    opacity: 0;
+                    width: 140px;
+                    // width: 60%;
+                    height: 140px;
+                    margin: 105px 305px;
+                    border: 1px solid rgb(252, 11, 11);
+                    .tensp{
+                        font-family: font-content;
+                        font-weight: bold;
+                        color: green;
+                    }
+                    .giaban{
+                        font-family: font-2;
+                    // font-weight: bold;
+                    }
+                }
+            }
+        }
+        
+        
+    }
+}
+    
+//footer
+.footer {
+    padding-top: 80px;
+    position: relative;
+    .footer-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/bg-footer.png);
+        z-index: -2;
+    }
+    &::before {
+        position: absolute;
+        content:  "";
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        top: 0;
+        opacity: 0.4;
+        z-index: -1;
+      
+      }
+    .footer-item {
+        text-align: center;
+        width: calc(100%/3);
+        color: $mau-chu;
+        h2{
+            font-family: font-content;
+        }
+        i {
+            color: #ffffff;
+            font-size: 25px;
+            margin-right: 12px;
+            cursor: pointer;
+            transition: $mau-chu;
+            &:hover {
+                color: $primary-color;
+              }
+        }
+    }
+    .logo{
+        .anh{
+            width: 100%;
+            margin-top: -100px;
+            margin-bottom: -50px;
+        }   
+    }
+    p {
+        margin: 12px 0;
+      }
+    .footer-copyright {
+        text-align: center;
+        padding: 50px 0 12px;
+        color: #fff;
+        margin-top: 20px;
+        border-top: 2px solid white;
+     }
+}
+//nút lên
+.goup{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+    //hiển thị trỏ chuột
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+    visibility: hidden; 
+    &:hover .btnup{
+        color: rgb(247, 115, 8);
+    }
+    .btnup{
+        // background-color: green;
+        color: $primary-color;
+        font-size: 50px;
+        margin-right: 20px;
+        
+    }
+}
+.hiennut{
+    opacity: 1;
+    transition: 0.5s;
+    visibility: visible;
+}
+.andn{
+    opacity: 0;
+    visibility: hidden;
+    // z-index: 1;
+}
+//tài khoản
+
+//đăng nhập
+.dangnhap{
+    width: 100%;
+    position: fixed;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.623);
+    top: 0px;
+    
+    height: 100%;
+    /* border: 2px solid black; */
+    /* background-color: gray; */
+    text-align: center;
+    .ct{
+        top: 130px;
+        border-radius: 5px;
+        background-color: rgba(255, 0, 0, 0.877);
+        padding-bottom: 15px;
+        .logo{
+            img{
+                width: 160px;
+            }
+        }
+        .txttkmk{
+            width: 80%;
+            margin: 5px 0;
+            padding: 10px 10px;
+            border-radius: 10px;
+        }
+        .btn{
+            font-family: font-content;
+            margin: 20px;
+            background-color: white !important;
+            color: black;
+            &:hover{
+                background-color: rgb(52, 165, 42) !important;
+                color: white;
+            }
+        }
+        a{
+            color: white;
+            
+        }
+        a:hover{
+            color: white;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/datban.css">
+    <link rel="stylesheet" href="../bottrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../font/font/css/all.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- <script type="text/javascript" src="../dist/js/id.js"></script> -->
+    <!-- <script src="../dist/js/id.js"></script> -->
+    <script src="../dist/js/lienhe.js"></script>
+    <title>Đặt bàn</title>
+</head>
+<body>
+    <div class="main">
+        <!-- menu  -->
+        <nav class="menu navbar navbar-expand-sm navbar-light bg-faded fixed-top">
+            <a class="navbar-brand logo" href="#"><img src="./images/logo.png" alt="" id="lg"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link ds" href="index.html">Trang chủ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ds" href="thucdon.html">Thực đơn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ds" href="datban.html">Đặt bàn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ds" href="lienhe.html">Liên hệ</a>
+                    </li>
+                   
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 txtsearch" type="text" placeholder="Nhập từ khóa">
+                    <button class="btn btn-outline-success my-2 my-sm-0 nutsearch" type="submit"><i class="fas fa-search"></i></button>
+                    <div id="nutdn" class="btndangnhap my-2 my-sm-0">
+                        Đăng nhập
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <!-- end menu  -->
+        
+        <!-- slide  -->
+        <div class="slide">
+            <img src="" alt="" class="layer1">
+            <div class="layernd">
+                <div class="ndsl">
+                    <h3 class="ct_big">Ẩm Thực Việt</h3>
+                    <h6 class="ct_small fixed-bottom">Trọn mọi khoảnh khắc</h6>
+                </div>
+
+            </div>
+        </div>
+        <!-- end slide  -->
+    
+        <!-- dat ban  -->
+       <div class="datban">
+        <div class="slide-oder">
+            <div class="container">
+                <div class="row oder">
+                    <div class="col-sm-4 or-left ">
+                        <i>Đặt Bàn Ngay</i> <br>
+                        <span>0123 456 789</span>
+                    </div>
+                    <div class="col-sm-8 or-right">
+                        <b><i>Bạn Muốn Đặt Tiệc</i></b></a>
+                        <p>
+                            Với nhu cầu được phục vụ khách hàng của ADC được tốt hơn.
+                            Bạn vui lòng liên hệ đặt dịch vụ trước cho chúng tôi theo số điện thoại:
+                            <i>0123 456 789 - 0987 654 321</i> hoặc Email:nhahangadc@gmail.com </br>
+        <b><u>ĐỊA CHỈ NHÀ HÀNG:</u></b> <i>143 Núi Thành</i>
+    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row" >
+                <div class="col-sm-12">
+                    <h1><b><i>Nhập Thông Tin Đặt Bàn</i></b></h1>
+                    <div class="border"></div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 oder">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="usr" placeholder="HỌ VÀ TÊN*">
+                    </div>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="usr" placeholder="NƠI LÀM VIỆC / ĐỊA CHỈ*">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="EMAIL*" required="">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <input type="number" name="sđt" placeholder="SỐ ĐIỆN THOẠI*" required="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+    
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <input type="number" name="number" placeholder="SỐ LƯỢNG NGƯỜI*" required="">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <input type="text" class="pull-right" name="date" id="datepicker" placeholder="XIN MỜI CHỌN NGÀY*" required="">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="form-group">
+                        <input type="text" class="timepicker" name="time" placeholder="XIN MỜI CHỌN KHUNG GIỜ(TỪ 7H-22H)*">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="form-group ">
+                <textarea rows="10" name="message" placeholder="NỘI DUNG GỬI ĐẾN CHÚNG TÔI*"></textarea>
+            </div>
+            <div class="col-md-12 col-submit">
+                <button type="submit" class="submit" property="">GỬI ĐI</button>
+                <span>* Là thông tin bắt buộc</span>
+                </br>
+                </br>
+            </div>
+        </div>
+       </div>
+        <!-- end dat ban  -->
+        <!-- footer  -->
+        <section class="footer">
+            <div class="footer-bg"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="footer-item">
+                        <h2>Liên hệ với chúng tôi</h2>
+                        <p>Bạn muốn tham gia cùng chúng tôi trên mạng xã hôi</p>
+                        <br>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter-square"></i>
+                        <i class="fab fa-youtube"></i>
+                        <br>
+                        <p>Phone: 0384565564 <br> Email: xuanchienk24@gmail.com</p>
+                    </div>
+                    <div class="footer-item logo">
+                       <a href="index.html"> <img src="./images/logo.png" alt="" class="anh"></a>
+                   </div>
+                   <div class="footer-item">
+                     <h2>Địa Chỉ</h2>
+                     <p>40 Kỳ Đồng <br> Xuân Hà, Thanh Khê, Đà Nẵng</p>
+                   </div>
+                  </div>
+                </div>
+                <div class="container">
+                    <div class="footer-copyright">
+                        Toàn bộ bản quyền thuộc nhóm Đồ Án CIDO 3 - Đặng Xuân Chiến - Hoàng Anh Sỹ - Trần Văn Sỹ - Nguyễn Nhật Tân - Nguyễn Hoài Linh
+                    </div>
+                </div>
+          </section>
+   
+   
+        <!-- end footer  -->
+        <div class="goup">
+            <i id="btntop" class="far fa-caret-square-up btnup"></i>
+        </div>
+        <!-- đăng nhập đăng ký  -->
+        <div class="dangnhap andn">
+            <div class="container dn">
+                <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-4 ct">
+                        <div class="logo">
+                            <img src="../dist/images/logo.png" alt="">
+                          </div>
+                          <input type="email" class="txttkmk" id="inputtk" placeholder="Tên đăng nhập">
+                          <input type="password" class="txttkmk" id="inputmk" placeholder="Mật khẩu">
+
+                          <button type="submit" class="btndn btn btn-danger">Đăng nhập</button> <br>
+                          <a href="" class="quenmk">Quên mật khẩu ?</a> <br>
+                          <a href="dangky.html" class="dangky" >Đăng Ký</a>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- end đăng nhập đăng ký  -->
+    </div>
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+</html>

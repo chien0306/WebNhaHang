@@ -1,0 +1,46 @@
+.dangky{
+    background: url(/dist/images/bg.jpg);
+    width: 100%;
+    position: fixed;
+    z-index: 10000011;
+    background-color: rgba(0, 0, 0, 0.623);
+    top: 0px;
+    
+    height: 100%;
+    text-align: center;
+   }   
+   .dkct{
+        top: 100px;
+        border-radius: 5px;
+        background-color: rgba(255, 0, 0, 0.877);
+        padding-bottom: 15px;
+   }
+    .dklogo img{
+                width: 160px;
+            }
+.txttkmk{
+            width: 80%;
+            margin:3px 0;
+            padding: 10px 10px;
+            height: 50px;
+            border-radius: 10px;
+        }
+.btndk{
+            font-family: font-content;
+            margin: 20px;
+            background-color: white !important;
+            color: black !important;
+}
+            .btndk:hover{
+                background-color: rgb(52, 165, 42) !important;
+                color: white;
+            }
+        
+        a{
+            color: white;
+            
+        }
+        a:hover{
+            color: white;
+        }
+    
